@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+$primary-color-l: #795757;
+$secondary-color-l: #664343;
+$primary-color-d: #D9B5B5;
+$secondary-color-d: #C69D9D;
+$text-dark:#FFF0D1;
+$text-nor:#FFF0D1;
+$text-light:#3B3030;
+$background-l : #FFF0D1;
+$background-d : #3B3030;
+
+:root {
+  --primary-color: #{$primary-color-l};
+  --secondary-color: #{$secondary-color-l};
+  --text-light:#{$text-light};
+  --text-nor:#{$text-nor};
+  --text-dark:#{$text-dark};
+  --background : #{$background-l};
+}
+
+[data-theme="dark"]{
+    --primary-color: #{$primary-color-d};
+    --secondary-color: #{$secondary-color-d};
+    --background:#{$background-d};
+}
+
+
+body{
+    font-family: "Playwrite GB S", cursive;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
