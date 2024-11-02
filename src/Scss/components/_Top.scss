@@ -1,3 +1,5 @@
+@use '../base/base';
+
 nav {
     display: flex;
     justify-content: center;
@@ -14,11 +16,15 @@ nav {
 }
 a {
     text-decoration: none !important;
-    color: black !important;
+    color: var(--text-nor) !important;
 }
 #top {
     position: relative;
     margin: 0px 0px 20px;
-    padding: 10px 0px;
-    border-bottom: 1px solid black;
+    padding: 5px 0px;
+    background: var(--primary-color);
+    border-bottom: var(--secondary-color);
+}
+li {
+    color: var(--text-nor) !important;
 }
